@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 public class LoginService {
     @Autowired(required = false)
     private LoginMapper loginMapper;
-
     public boolean isExist(String phone){
         return loginMapper.isExist(phone);
     }

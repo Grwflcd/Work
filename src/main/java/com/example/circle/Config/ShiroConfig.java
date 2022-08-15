@@ -32,7 +32,8 @@ public class ShiroConfig {
          * authc 需要登录以后才可以访问
          * 过滤链由上而下执行的
          */
-        filterChainDefinitionMap.put("/api/test", "authc");
+        filterChainDefinitionMap.put("/api/test", "anon");
+        filterChainDefinitionMap.put("/api/test2","authc");
         filterChainDefinitionMap.put("/**", "anon");
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChainDefinitionMap);
         return shiroFilterFactoryBean;

@@ -7,14 +7,5 @@
         WHERE phone=#{phone}
         LIMIT 1
     </select>
-    <select id="getUserByName" resultType="com.example.circle.Entity.User">
-        SELECT
-            id,
-            login_name AS 'loginName',
-            pass_word AS 'passWord'
-        FROM
-            ums_user
-        WHERE
-            login_name = #{name}
-    </select>
+
 </mapper>

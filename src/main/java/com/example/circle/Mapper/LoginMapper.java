@@ -5,5 +5,4 @@ import org.apache.ibatis.annotations.Param;
 
 public interface LoginMapper {
     public boolean isExist(String phone);
-    User getUserByName(@Param("name") String name);
 }

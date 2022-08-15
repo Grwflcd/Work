@@ -21,7 +21,7 @@ public class CustomAuthorizingRealm extends AuthorizingRealm {
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals){
         return null;
     }
-    /**
+    /**k
      * AuthenticationInfo 身份验证
      * @param token
      * @return
